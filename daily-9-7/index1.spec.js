@@ -3,7 +3,7 @@ function rotateMatrix (arr) {
 	for (let c = 0; c < Math.floor(n/2); c++) {
 		const l = n - c - 1;
 		for (let i = 0; i < l - c; i++) {
-			const t 			= arr[l - i][c];	
+			const t 		= arr[l - i][c];	
 			arr[l - i][c] 	= arr[l][l - i];
 			arr[l][l - i] 	= arr[c + i][l];
 			arr[c + i][l] 	= arr[c][c + i];
